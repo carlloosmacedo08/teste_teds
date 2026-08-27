@@ -1,2 +1,3 @@
-# teste_teds
-Repositorio teste GitHub
+# Repositório de teste 
+## Disciplina programção Front-end
+### Carlos Macedo Mendonça
