@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial básico de HTML</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; max-width: 900px; margin: auto; padding: 24px; color: #222; }
+    header, footer { background: #173f5f; color: white; padding: 20px; border-radius: 8px; }
+    nav a { color: white; margin-right: 16px; }
+    section { margin: 28px 0; }
+    code, pre { background: #f1f3f5; border-radius: 4px; }
+    code { padding: 2px 5px; }
+    pre { padding: 14px; overflow-x: auto; }
+    .exemplo { border-left: 4px solid #20639b; padding-left: 16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tutorial básico de HTML</h1>
+    <p>Conheça as principais tags para criar páginas web.</p>
+    <nav aria-label="Navegação principal">
+      <a href="#estrutura">Estrutura</a>
+      <a href="#texto">Texto</a>
+      <a href="#links">Links e imagens</a>
+      <a href="#formularios">Formulários</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="estrutura">
+      <h2>1. Estrutura básica</h2>
+      <p>Um documento HTML normalmente começa com estas tags:</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Título da página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;Conteúdo visível&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      <p><code>&lt;head&gt;</code> contém configurações e <code>&lt;body&gt;</code> contém o conteúdo exibido.</p>
+    </section>
+
+    <section id="texto">
+      <h2>2. Títulos e textos</h2>
+      <p>Use <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> para títulos e <code>&lt;p&gt;</code> para parágrafos.</p>
+      <div class="exemplo">
+        <h3>Exemplo de título</h3>
+        <p>Este é um parágrafo com <strong>negrito</strong>, <em>ênfase</em> e uma <mark>parte destacada</mark>.</p>
+      </div>
+      <p>Listas usam <code>&lt;ul&gt;</code> (não ordenada), <code>&lt;ol&gt;</code> (ordenada) e <code>&lt;li&gt;</code> (item):</p>
+      <ul><li>Primeiro item</li><li>Segundo item</li></ul>
+    </section>
+
+    <section id="links">
+      <h2>3. Links e imagens</h2>
+      <p>A tag <code>&lt;a&gt;</code> cria links. A tag <code>&lt;img&gt;</code> exibe imagens e deve ter um texto alternativo.</p>
+      <p><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener">Consulte a documentação do HTML</a>.</p>
+      <img src="https://via.placeholder.com/500x120?text=Exemplo+de+imagem" alt="Imagem ilustrativa de exemplo" width="500" height="120">
+    </section>
+
+    <section id="tabelas">
+      <h2>4. Tabelas</h2>
+      <table border="1">
+        <caption>Exemplo de tabela</caption>
+        <thead><tr><th>Tag</th><th>Função</th></tr></thead>
+        <tbody><tr><td><code>&lt;table&gt;</code></td><td>Cria a tabela</td></tr><tr><td><code>&lt;tr&gt;</code></td><td>Cria uma linha</td></tr></tbody>
+      </table>
+    </section>
+
+    <section id="formularios">
+      <h2>5. Formulários</h2>
+      <p>Formulários coletam informações do usuário com <code>&lt;form&gt;</code>, <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code> e <code>&lt;button&gt;</code>.</p>
+      <form action="#" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer><small>HTML usa tags semânticas para organizar o conteúdo de forma clara e acessível.</small></footer>
+</body>
+</html>
